@@ -1,37 +1,41 @@
-console.log("\nCalculadora\n")
+const prompt = require("prompt-sync")()
+function 
+      iniciar(){ 
+        console.log("\nCalculadora\n")
 		let num1
 		let num2
 		let result
 		let sinal 
 
 		console.log("Digite o sinal da operação:")
-		prompt(sinal)
+		sinal = prompt()
 
 		console.log("Digite o num1:")
-	     prompt(num1)
+	     num1 = parseFloat(prompt())
 	     console.log("Digite o num2:")
-	     prompt(num2)
+	     num2 = parseFloat(prompt())
 
-          switch(sinal){
-          case '+':    
-	     escreva("O resultado é:", num1 + num2)
+         switch(sinal){
+         case '+':
+		 result = num1 + num2	    
+	     console.log("O resultado é:", result, "\n")
 	     break
 
-	     caso '-':
-	     escreva("o resultado é:", num1 - num2)
-	     pare
+	     case '-':
+	     console.log("o resultado é:", num1 - num2)
+	     break
 
-	     caso '*':
-	     escreva("o resultado é:", num1 * num2)
-	     pare
+	     case '*':
+	     console.log("o resultado é:", num1 * num2)
+	     break
 
-	     caso'/':
-	     escreva("o resultado é:", num1 / num2)
-	     pare
+	     case'/':
+	     console.log("o resultado é:", num1 / num2)
+	     break
 
-	     caso contrario:
-	     escreva("Operação Inválida!")
-	     pare
+	    
+		}
 
+	}
 
-          }
+	iniciar()
